@@ -12,6 +12,9 @@ const app = express();
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname + '/example/basic/index.html'));
 });
+app.get('/dist/three-spritetext.js', (req, res) => {
+  res.sendFile(path.join(__dirname + '/dist/three-spritetext.js'));
+});
 
 app.listen(PORT, HOST);
 console.log(`Running on http://${HOST}:${PORT}`);
