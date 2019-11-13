@@ -10,7 +10,7 @@ const HOST = '0.0.0.0';
 // App
 const app = express();
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname + '/example/basic/index.html'));
+  res.sendFile(path.join(__dirname + '/example/multiline/index.html'));
 });
 app.get('/dist/three-spritetext.js', (req, res) => {
   res.sendFile(path.join(__dirname + '/dist/three-spritetext.js'));
