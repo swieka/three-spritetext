@@ -31,13 +31,16 @@
     "dev": "rollup -c -w",
     "minify": "terser dist/three-spritetext.js -o dist/three-spritetext.min.js -c -m --comments '/Version/'",
     "build-module": "rollup -c rollup.config.module.js",
-    "prepare": "npm run build && npm run minify && npm run build-module"
+    "prepare": "npm run build && npm run minify && npm run build-module",
+	"start": "node server.js"
   },
   "files": [
     "dist/**/*",
     "example/**/*"
   ],
-  "dependencies": {},
+  "dependencies": {
+   "express": "^4.16.1"
+  },
   "peerDependencies": {
     "three": ">=0.86.0"
   },

@@ -29,6 +29,15 @@ var myScene = new THREE.Scene();
 myScene.add(myText);
 ```
 
+## Docker guide
+Build container
+```
+docker build -t three-spritetext .
+```
+and run on localhost:48123
+```
+docker run -p 48123:8080 -d three-spritetext
+```
 ## API reference
 
 ### Constructor
